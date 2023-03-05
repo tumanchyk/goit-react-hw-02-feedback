@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import { Button, List } from './Button.styled';
-
 export default function FeedbackOptions({onLeaveFeedback}){
        return(
         <List>
@@ -8,4 +8,8 @@ export default function FeedbackOptions({onLeaveFeedback}){
         <li><Button onClick={onLeaveFeedback} name='bad'>Bad</Button></li>
     </List>
        )
+}
+
+FeedbackOptions.propTypes = {
+onLeaveFeedback: PropTypes.func,
 }
